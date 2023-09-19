@@ -1,3 +1,4 @@
+package Lf;
 import java.util.*;
 
 class Notebook {
@@ -17,7 +18,6 @@ class Notebook {
 public class Lf {
     public static void main(String[] args) {
         Set<Notebook> notebooks = new HashSet<>();
-        // Добавьте ноутбуки в множество
         notebooks.add(new Notebook(8, 512, "Windows", "Black"));
         notebooks.add(new Notebook(16, 1024, "MacOS", "Silver"));
 
@@ -56,7 +56,6 @@ public class Lf {
 
         Set<Notebook> filtered = filterNotebooks(notebooks, filters);
         
-        // Выведите отфильтрованные ноутбуки
         for (Notebook notebook : filtered) {
             System.out.println(notebook.ram + " " + notebook.hdd + " " + notebook.os + " " + notebook.color);
         }
